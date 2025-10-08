@@ -1,122 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Products</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
+    
     <!-- Sidebar -->
     <aside class="sidebar">
-      <h3>Browse by</h3>
-      <ul class="menu">
-        <li><a href="#" class="active">All Products</a></li>
-        <li><a href="#">Bags</a></li>
-        <li><a href="#">Best Sellers</a></li>
-        <li><a href="#">Leather Belts</a></li>
-        <li><a href="#">Mini Leather Goods</a></li>
-        <li><a href="#">Phone Cases</a></li>
+      <h2>Browse by</h2>
+      <ul class="nav-links">
+        <li class="active">All Products</li>
+        <li>Bags</li>
+        <li>Best Sellers</li>
+        <li>Leather Belts</li>
+        <li>Mini Leather Goods</li>
+        <li>Phone Cases</li>
       </ul>
 
       <div class="filters">
         <h3>Filter by</h3>
-        <div class="filter">
-          <label>Price</label>
-          <input type="range" min="25" max="400" value="400" />
-          <div class="price-values">
-            <span>$25</span><span>$400</span>
+        
+        <div class="filter-group">
+          <label for="price">Price</label>
+          <input type="range" min="25" max="400">
+          <div class="price-labels">
+            <span>$25</span>
+            <span>$400</span>
           </div>
         </div>
 
-        <div class="filter collapsible">
-          <div class="filter-title">Model <span>+</span></div>
+        <div class="filter-group">
+          <details>
+            <summary>Model</summary>
+          </details>
         </div>
-        <div class="filter collapsible">
-          <div class="filter-title">Size <span>+</span></div>
+
+        <div class="filter-group">
+          <details>
+            <summary>Size</summary>
+          </details>
         </div>
       </div>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="header">
-        <h1>All Products</h1>
-        <div class="sort">
-          <span>Sort by: <b>Recommended</b> ▼</span>
-        </div>
-      </div>
-
-      <p class="products-count">40 products</p>
+      <div class="top-bar">
+  <h1 class="centered-title">All Products</h1>
+  <div class="sort-by">
+    Sort by: <span>Recommended</span>
+  </div>
+</div>
 
       <div class="product-grid">
-        <!-- Example Product Card -->
+        <!-- Repeat product-card as needed -->
+
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
+          <img src="https://img01.ztat.net/article/spp-media-p1/34cf4727343d48fcaa50947e71e1aa88/25e92f24d8084db1bc6dfac0b7ae244b.jpg?imwidth=762" alt="Product">
+          <div class="product-info">
+            <p class="name">I'm a product</p>
+            <p class="price">$400.00</p>
+          </div>
         </div>
 
-        <div class="product-card bestseller">
+        <div class="product-card">
           <span class="badge">Best Seller</span>
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
+          <img src="https://img01.ztat.net/article/spp-media-p1/83d17645fd644de08e6bfdcfe75528c0/9ab61057edfd4a869037ac44676d22f4.jpg?imwidth=762&filter=packshot" alt="Product">
+          <div class="product-info">
+            <p class="name">I'm a product</p>
+            <p class="price">$400.00</p>
+          </div>
         </div>
 
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
+          <img src="https://img01.ztat.net/article/spp-media-p1/f8113bbe50c14c51b4c2fc01a672f4b9/663463fe04f242f99123c532e8803a52.jpg?imwidth=762" alt="Product">
+          <div class="product-info">
+            <p class="name">I'm a product</p>
+            <p class="price">$400.00</p>
+          </div>
         </div>
 
-        <div class="product-card bestseller">
+        <div class="product-card">
           <span class="badge">Best Seller</span>
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
+          <img src="https://img01.ztat.net/article/spp-media-p1/18a5244e06f54b28ad8bd9d65eb06b1f/55324fd5a7b24a43b4357a812230839a.jpg?imwidth=762" alt="Product">
+          <div class="product-info">
+            <p class="name">I'm a product</p>
+            <p class="price">$400.00</p>
+          </div>
         </div>
 
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$300.00</p>
+          <img src="https://img01.ztat.net/article/spp-media-p1/0b12821de3424d75a5c356188bbe51d6/4a99ac8ab14d4a3b935b91e60e0f615e.jpg?imwidth=762" alt="Product">
+          <div class="product-info">
+            <p class="name">I'm a product</p>
+            <p class="price">$300.00</p>
+          </div>
         </div>
 
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$300.00</p>
+          <img src="https://img01.ztat.net/article/spp-media-p1/ca701355ac26436eb6493b65212b6ac6/51ddafafc5094ac0a51702dd5024e41c.jpg?imwidth=762" alt="Product">
+          <div class="product-info">
+            <p class="name">I'm a product</p>
+            <p class="price">$300.00</p>
+          </div>
         </div>
 
-        <div class="product-card bestseller">
-          <span class="badge">Best Seller</span>
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
-        </div>
-
-        <div class="product-card">
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
-        </div>
-
-        <div class="product-card">
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
-        </div>
-
-        <div class="product-card bestseller">
-          <span class="badge">Best Seller</span>
-          <img src="https://via.placeholder.com/300x350" alt="product" />
-          <p class="title">I'm a product</p>
-          <p class="price">$400.00</p>
-        </div>
+        <!-- Add more product cards here -->
       </div>
     </main>
+
   </div>
 </body>
 </html>
