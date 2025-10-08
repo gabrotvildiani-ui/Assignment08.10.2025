@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  padding: 40px 20px;
+  border-right: 1px solid #eee;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.menu {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.menu a.active {
+  font-weight: 600;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.filter {
+  margin-bottom: 25px;
+}
+
+.filter label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.filter-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.sort {
+  font-size: 15px;
+  color: #444;
+}
+
+.products-count {
+  color: #666;
+  margin: 10px 0 30px;
+  font-size: 14px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.product-card {
+  position: relative;
+  text-align: center;
+  background: #faf7f5;
+  border-radius: 12px;
+  padding: 20px 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #b46b48;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+
+.title {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+.price {
+  color: #b46b48;
+  font-style: italic;
+  margin-top: 5px;
+}
